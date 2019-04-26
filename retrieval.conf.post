@@ -1,0 +1,10 @@
+retrieval_plugin {
+	name : "semantic_recall"
+	type : "SemanticRetrievalPlugin"
+	vector_size : 128
+	search_k : 10000 
+	index_path : "./example/conf/semantic.annoy"
+	using_dict_name: "annoy_knowledge_dict"
+	num_result : 20
+}
+

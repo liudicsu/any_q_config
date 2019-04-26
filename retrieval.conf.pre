@@ -1,0 +1,15 @@
+retrieval_plugin {
+    name : "term_recall_1"
+    type : "TermRetrievalPlugin"
+    search_host : "127.0.0.1"
+    search_port : 8900
+    engine_name : "collection1"
+    solr_result_fl : "id,question,answer"
+    solr_q : {
+        type : "EqualSolrQBuilder"
+        name : "equal_solr_q_1"
+        solr_field : "question"
+        source_name : "question"
+    }
+    num_result : 20
+}

@@ -1,0 +1,20 @@
+name: "example_dict_conf"
+
+dict_config {
+    name: "rank_weights"
+    type: "String2FloatAdapter"
+    path: "./rank_weights"
+}
+
+dict_config {
+    name: "lac"
+    type: "WordsegAdapter"
+    path: "./wordseg_utf8"
+}
+
+dict_config{
+    name: "fluid_simnet"
+    type: "PaddleSimAdapter"
+    path: "./simnet"
+}
+
